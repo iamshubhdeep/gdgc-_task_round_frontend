@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     document.getElementById('about-us-btn').addEventListener('click', () => {
       alert('Navigating to About Us Page...');
-      window.location.href = 'about.html'; 
+      window.location.href = '/structure/about.html'; 
     });
   
     document.getElementById('signup-btn').addEventListener('click', () => {
       alert('Navigating to Sign-Up Page...');
-      window.location.href = 'signup.html'; 
+      window.location.href = '/structure/signup.html'; 
     });
   
     document.getElementById('demo-btn').addEventListener('click', () => {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById("demo-btn").addEventListener("click", function () {
-      window.location.href = "book-demo.html";
+      window.location.href = "/structure/book-demo.html";
     });
     
   
