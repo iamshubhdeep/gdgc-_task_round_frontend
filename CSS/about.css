@@ -1,0 +1,103 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    padding: 15px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .navbar ul li a.active {
+    background-color: #ffcc00;
+    color: #1a1a2e;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #00f2fe;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .about-section, .mission-vision, .team {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .mission-vision .mission, .mission-vision .vision {
+    width: 45%;
+    background: #2c2f54;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .team {
+    background: #22254b;
+  }
+  
+  .team-avatars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .team-avatars img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ff7eb3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer {
+    background: #2c2f54;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
