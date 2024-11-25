@@ -29,3 +29,4 @@ Welcome to the **GDGC Club** website repository! This project showcases a respon
 
 ## 📞 Contact
 - Email: iamshubhdeep@gmail.com
+- Vercel: https://gdgc-task-round-frontend-pink.vercel.app/
