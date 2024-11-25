@@ -1,8 +1,6 @@
-// Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Anime.js Ready!");
   
-    // Animate the hero text on load
     anime({
       targets: '.hero h1',
       translateY: [-50, 0],
@@ -11,17 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
       duration: 1000,
       delay: 500
     });
-  
-    // Animate avatar images with a bounce effect
+
     anime({
       targets: '.avatars img',
       scale: [0, 1],
       opacity: [0, 1],
       easing: 'easeOutBounce',
-      delay: anime.stagger(200) // Delay increases for each element
+      delay: anime.stagger(200) 
     });
   
-    // Animate the "Book Demo Call" button with a loop
     anime({
       targets: '.demo-button',
       scale: [1, 1.1],
@@ -31,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true
     });
   
-    // Scroll-based animation for solutions section
     const solutions = document.querySelector('.solutions');
     window.addEventListener('scroll', () => {
       const rect = solutions.getBoundingClientRect();
@@ -46,16 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // Animate the statistics section numbers
     anime({
       targets: '.statistics strong',
       innerHTML: [0, 700],
       easing: 'linear',
       duration: 2000,
-      round: 1 // Ensures only whole numbers are displayed
+      round: 1 
     });
   
-    // Scroll-to-top button animation
     const scrollTopButton = document.querySelector('button');
     scrollTopButton.addEventListener('mouseenter', () => {
       anime({
@@ -74,23 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // Button interactions for navigation
     document.getElementById('services-btn').addEventListener('click', () => {
       alert('Navigating to Services Page...');
-      window.location.href = '/structure/services.html'; // Replace with actual URL or relative path
+      window.location.href = '/structure/services.html';
     });
   
     document.getElementById('about-us-btn').addEventListener('click', () => {
       alert('Navigating to About Us Page...');
-      window.location.href = 'about.html'; // Replace with actual URL or relative path
+      window.location.href = 'about.html'; 
     });
   
     document.getElementById('signup-btn').addEventListener('click', () => {
       alert('Navigating to Sign-Up Page...');
-      window.location.href = 'signup.html'; // Replace with actual URL or relative path
+      window.location.href = 'signup.html'; 
     });
   
-    // Demo button interaction
     document.getElementById('demo-btn').addEventListener('click', () => {
       alert('Demo Call Booked! We will contact you shortly.');
     });
@@ -100,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
   
-    // Hover Interaction: Rotate the Avatar
     document.querySelectorAll('.avatars img').forEach((avatar) => {
       avatar.addEventListener('mouseenter', () => {
         anime({
